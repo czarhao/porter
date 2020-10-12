@@ -1,0 +1,13 @@
+container:
+  name: dev_container
+  tty: true
+image:
+  path: /home/czarhao/Code/go/porter/image/busybox.tar
+  run: /bin/sh
+  layer:
+    root_url: /home/czarhao/tmp/root
+    mnt_url: /home/czarhao/tmp/mnt
+    writer_url: /home/czarhao/tmp/writer
+limit:
+  memory: 50m
+  cpu_share: 512
